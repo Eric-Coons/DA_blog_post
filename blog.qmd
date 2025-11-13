@@ -1,0 +1,44 @@
+---
+title: "Data Acquisition Blog"
+author: "Eric Coons"
+jupyther: python3
+---
+
+## 1. Introduction
+
+I am an avid fan of the Sid Meier's Civilization franchise, and I wanted to see how active the Civilization 6 playerbase is, compared to a couple other map-based strategy games that are out there. This project is relevant to me because I like these kinds of games a lot and I imagine the player activity numbers behave differently compared the more popular genres, like first-person shooters.
+
+## 2. Motivating question(s)
+
+I would like to see not only which map-based strategy game has the largest active playerbase, but how their activity number compare on a month by month basis. It would be interesting to see, for example, if Civilization 6's player activity dropped noticeably after the release of Civilization 7, in February of 2025.
+
+## 3. Ethicality
+
+All the data that I scraped came from the steamcharts.com website, which acquires all of its data from the steam store website. The robots.txt file in the steam store is very liberal, with very few scraping areas that are disallowed. 
+
+## 4. Steps to get data
+
+The BeautifulSoup package makes web scraping easy, and I made use of it alongside pandas to pull together the data I was interested in. The 3 steamcharts.com I scraped from were very simple, and I didn't have to do much more than the standard beautifulsoup process to pull out the tables. After I had pulled out the tables, I removed the first row and separated the "Month" column into new "Month" and "Year" columns. Once I had added a column to identify each observation with the game it was associated with, concatenating the dataframes together was a breeze.
+
+## 5. EDA highlights
+
+The following is a quick summary of the different columns of the data:
+Month: The month of the observation
+Year: The year of the observation
+Avg. Players: The average player count at any given time during the month
+Gain: The increase/decrease in average players, vs the previous month
+% Gain: The % increase/decrease in average players, vs the previous month
+Peak Players: The single highest recorded concurrent player count during the observed month
+Game: The name of the game observed (Civilization 6, Europa Universalis, Humankind)
+In total, there are 311 unique observations in the dataset.
+
+### Summary statistics
+
+All-time Peak player count
+![Peak Player Counts](peak.png)
+All-time Average player count
+![Average Player Counts](avg.png)
+
+As I expected, Civilization 6 (my favorite) had the highest peak player count. One interesting thing to note is that despite Humankind having a higher all-time player peak than Europa Universalis, its all-time average player count was hardly a tenth of Europa's! This is likely due to the huge hype that was built around Humankind before its release, it being touted as a "Civ-Killer" meant to outclass the games in the Civilization franchise. As the summary statistics and internet commentary point out, the release was a huge letdown for many people who bought into the hype surrounding Humankind. This makes sense, as the month in which Humankind hit their top player count was the first month of its release, which in the next two months dropped by nearly 90%
+
+
