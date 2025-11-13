@@ -129,8 +129,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+<span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -215,7 +219,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The following is a quick summary of the different columns of the data: Month: The month of the observation Year: The year of the observation Avg. Players: The average player count at any given time during the month Gain: The increase/decrease in average players, vs the previous month % Gain: The % increase/decrease in average players, vs the previous month Peak Players: The single highest recorded concurrent player count during the observed month Game: The name of the game observed (Civilization 6, Europa Universalis, Humankind) In total, there are 311 unique observations in the dataset.</p>
 <section id="summary-statistics" class="level3">
 <h3 class="anchored" data-anchor-id="summary-statistics">Summary statistics</h3>
-<p>All-time Peak player count <img src="peak.png" class="img-fluid" alt="Peak Player Counts"> All-time Average player count <img src="avg.png" class="img-fluid" alt="Average Player Counts"></p>
+<p>All-time Peak player count</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="peak.png" class="img-fluid figure-img"></p>
+<figcaption>Peak Player Counts</figcaption>
+</figure>
+</div>
+<p>All-time Average player count</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="avg.png" class="img-fluid figure-img"></p>
+<figcaption>Average Player Counts</figcaption>
+</figure>
+</div>
 <p>As I expected, Civilization 6 (my favorite) had the highest peak player count. One interesting thing to note is that despite Humankind having a higher all-time player peak than Europa Universalis, its all-time average player count was hardly a tenth of Europa’s! This is likely due to the huge hype that was built around Humankind before its release, it being touted as a “Civ-Killer” meant to outclass the games in the Civilization franchise. As the summary statistics and internet commentary point out, the release was a huge letdown for many people who bought into the hype surrounding Humankind. This makes sense, as the month in which Humankind hit their top player count was the first month of its release, which in the next two months dropped by nearly 90%</p>
 
 
@@ -349,7 +366,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/Eric-Coons\.github\.io\/DA_blog_post\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -713,12 +730,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">### Summary statistics</span></span>
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>All-time Peak player count</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="al">![Peak Player Counts](peak.png)</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>All-time Average player count</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="al">![Average Player Counts](avg.png)</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>As I expected, Civilization 6 (my favorite) had the highest peak player count. One interesting thing to note is that despite Humankind having a higher all-time player peak than Europa Universalis, its all-time average player count was hardly a tenth of Europa's! This is likely due to the huge hype that was built around Humankind before its release, it being touted as a "Civ-Killer" meant to outclass the games in the Civilization franchise. As the summary statistics and internet commentary point out, the release was a huge letdown for many people who bought into the hype surrounding Humankind. This makes sense, as the month in which Humankind hit their top player count was the first month of its release, which in the next two months dropped by nearly 90%</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="al">![Peak Player Counts](peak.png)</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>All-time Average player count</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="al">![Average Player Counts](avg.png)</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>As I expected, Civilization 6 (my favorite) had the highest peak player count. One interesting thing to note is that despite Humankind having a higher all-time player peak than Europa Universalis, its all-time average player count was hardly a tenth of Europa's! This is likely due to the huge hype that was built around Humankind before its release, it being touted as a "Civ-Killer" meant to outclass the games in the Civilization franchise. As the summary statistics and internet commentary point out, the release was a huge letdown for many people who bought into the hype surrounding Humankind. This makes sense, as the month in which Humankind hit their top player count was the first month of its release, which in the next two months dropped by nearly 90%</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

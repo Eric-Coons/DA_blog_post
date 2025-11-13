@@ -35,9 +35,13 @@ In total, there are 311 unique observations in the dataset.
 ### Summary statistics
 
 All-time Peak player count
+
 ![Peak Player Counts](peak.png)
+
 All-time Average player count
+
 ![Average Player Counts](avg.png)
+
 
 As I expected, Civilization 6 (my favorite) had the highest peak player count. One interesting thing to note is that despite Humankind having a higher all-time player peak than Europa Universalis, its all-time average player count was hardly a tenth of Europa's! This is likely due to the huge hype that was built around Humankind before its release, it being touted as a "Civ-Killer" meant to outclass the games in the Civilization franchise. As the summary statistics and internet commentary point out, the release was a huge letdown for many people who bought into the hype surrounding Humankind. This makes sense, as the month in which Humankind hit their top player count was the first month of its release, which in the next two months dropped by nearly 90%
 
