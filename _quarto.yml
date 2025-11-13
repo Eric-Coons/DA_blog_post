@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Simulation Tutorial Blog"
+  description: "A simple walkthrough of simulation in the context of statistical analysis"
+  
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.md
+        
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: true
+    code-tools: true
