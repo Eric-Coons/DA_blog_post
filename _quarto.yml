@@ -3,14 +3,14 @@ project:
   output-dir: docs
 
 website:
-  title: "Simulation Tutorial Blog"
-  description: "A simple walkthrough of simulation in the context of statistical analysis"
+  title: "Data Acquisition blog"
+  description: "A quick example of webscraping and data cleaning"
   
   navbar:
     background: primary
     left:
       - text: "Home"
-        href: index.md
+        href: blog.qmd
         
 format:
   html:
@@ -18,3 +18,4 @@ format:
     toc: true
     code-fold: true
     code-tools: true
+    css: styles.css
