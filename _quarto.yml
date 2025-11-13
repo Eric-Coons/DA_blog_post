@@ -11,6 +11,9 @@ website:
     left:
       - text: "Home"
         href: blog.qmd
+    right:
+      - icon: github
+        href: https://github.com/Eric-Coons
         
 format:
   html:
