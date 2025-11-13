@@ -43,6 +43,15 @@ All-time Average player count
 ![Average Player Counts](avg.png)
 
 
-As I expected, Civilization 6 (my favorite) had the highest peak player count. One interesting thing to note is that despite Humankind having a higher all-time player peak than Europa Universalis, its all-time average player count was hardly a tenth of Europa's! This is likely due to the huge hype that was built around Humankind before its release, it being touted as a "Civ-Killer" meant to outclass the games in the Civilization franchise. As the summary statistics and internet commentary point out, the release was a huge letdown for many people who bought into the hype surrounding Humankind. This makes sense, as the month in which Humankind hit their top player count was the first month of its release, which in the next two months dropped by nearly 90%
+As I expected, Civilization 6 (my favorite) had the highest peak and average player count. One interesting thing to note is that despite Humankind having a higher all-time player peak than Europa Universalis, its all-time average player count was hardly a tenth of Europa's! This is likely due to the huge hype that was built around Humankind before its release, it being touted as a "Civ-Killer" meant to outclass the games in the Civilization franchise. As the summary statistics and internet commentary point out, the release was a huge letdown for many people who bought into the hype surrounding Humankind. This makes sense, as the month in which Humankind hit their top player count was the first month of its release, which in the next two months dropped by nearly 90%.
 
+### Research question
 
+![Civ6 Players Before/After Civ7 Release](civ7.png)
+
+To tentatively answer the question of whether or not the release of Civilization 7 had a noticeable impact on Civilization 6 playership, I created the above graph. The EDA certainly seems to show a noticeable change in avg concurrent players after February 2025, when Civilization 7 was released! Later, I could do run some actual statistical analyses to determine if there is a statistically significant correlation, but for now I'll tentatively say that there seems to be one.
+
+## Links
+
+[SteamCharts Website](https://steamcharts.com)
+[Github Repo of Code](https://github.com/Eric-Coons/DA_blog_data)
