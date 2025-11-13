@@ -166,7 +166,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#eda-highlights" id="toc-eda-highlights" class="nav-link" data-scroll-target="#eda-highlights">5. EDA highlights</a>
   <ul class="collapse">
   <li><a href="#summary-statistics" id="toc-summary-statistics" class="nav-link" data-scroll-target="#summary-statistics">Summary statistics</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link" data-scroll-target="#research-question">Research question</a></li>
   </ul></li>
+  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
   </ul>
 </nav>
     </div>
@@ -233,12 +235,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <figcaption>Average Player Counts</figcaption>
 </figure>
 </div>
-<p>As I expected, Civilization 6 (my favorite) had the highest peak player count. One interesting thing to note is that despite Humankind having a higher all-time player peak than Europa Universalis, its all-time average player count was hardly a tenth of Europa’s! This is likely due to the huge hype that was built around Humankind before its release, it being touted as a “Civ-Killer” meant to outclass the games in the Civilization franchise. As the summary statistics and internet commentary point out, the release was a huge letdown for many people who bought into the hype surrounding Humankind. This makes sense, as the month in which Humankind hit their top player count was the first month of its release, which in the next two months dropped by nearly 90%</p>
+<p>As I expected, Civilization 6 (my favorite) had the highest peak and average player count. One interesting thing to note is that despite Humankind having a higher all-time player peak than Europa Universalis, its all-time average player count was hardly a tenth of Europa’s! This is likely due to the huge hype that was built around Humankind before its release, it being touted as a “Civ-Killer” meant to outclass the games in the Civilization franchise. As the summary statistics and internet commentary point out, the release was a huge letdown for many people who bought into the hype surrounding Humankind. This makes sense, as the month in which Humankind hit their top player count was the first month of its release, which in the next two months dropped by nearly 90%.</p>
+</section>
+<section id="research-question" class="level3">
+<h3 class="anchored" data-anchor-id="research-question">Research question</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="civ7.png" class="img-fluid figure-img"></p>
+<figcaption>Civ6 Players Before/After Civ7 Release</figcaption>
+</figure>
+</div>
+<p>To tentatively answer the question of whether or not the release of Civilization 7 had a noticeable impact on Civilization 6 playership, I created the above graph. The EDA certainly seems to show a noticeable change in avg concurrent players after February 2025, when Civilization 7 was released! Later, I could do run some actual statistical analyses to determine if there is a statistically significant correlation, but for now I’ll tentatively say that there seems to be one.</p>
+</section>
+</section>
+<section id="links" class="level2">
+<h2 class="anchored" data-anchor-id="links">Links</h2>
+<p><a href="https://steamcharts.com">SteamCharts Website</a> <a href="https://github.com/Eric-Coons/DA_blog_data">Github Repo of Code</a></p>
 
 
 <!-- -->
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -738,8 +754,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="al">![Average Player Counts](avg.png)</span></span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>As I expected, Civilization 6 (my favorite) had the highest peak player count. One interesting thing to note is that despite Humankind having a higher all-time player peak than Europa Universalis, its all-time average player count was hardly a tenth of Europa's! This is likely due to the huge hype that was built around Humankind before its release, it being touted as a "Civ-Killer" meant to outclass the games in the Civilization franchise. As the summary statistics and internet commentary point out, the release was a huge letdown for many people who bought into the hype surrounding Humankind. This makes sense, as the month in which Humankind hit their top player count was the first month of its release, which in the next two months dropped by nearly 90%</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>As I expected, Civilization 6 (my favorite) had the highest peak and average player count. One interesting thing to note is that despite Humankind having a higher all-time player peak than Europa Universalis, its all-time average player count was hardly a tenth of Europa's! This is likely due to the huge hype that was built around Humankind before its release, it being touted as a "Civ-Killer" meant to outclass the games in the Civilization franchise. As the summary statistics and internet commentary point out, the release was a huge letdown for many people who bought into the hype surrounding Humankind. This makes sense, as the month in which Humankind hit their top player count was the first month of its release, which in the next two months dropped by nearly 90%.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="fu">### Research question</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="al">![Civ6 Players Before/After Civ7 Release](civ7.png)</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>To tentatively answer the question of whether or not the release of Civilization 7 had a noticeable impact on Civilization 6 playership, I created the above graph. The EDA certainly seems to show a noticeable change in avg concurrent players after February 2025, when Civilization 7 was released! Later, I could do run some actual statistical analyses to determine if there is a statistically significant correlation, but for now I'll tentatively say that there seems to be one.</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="fu">## Links</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">SteamCharts Website</span><span class="co">](https://steamcharts.com)</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Github Repo of Code</span><span class="co">](https://github.com/Eric-Coons/DA_blog_data)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
