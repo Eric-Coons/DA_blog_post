@@ -10,6 +10,8 @@ website:
     background: primary
     left:
       - text: "Home"
+        href: index.md
+      - text: "Blog"
         href: blog.qmd
     right:
       - icon: github
